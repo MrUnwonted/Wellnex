@@ -1,15 +1,12 @@
 package com.camerinfolks.welnex.model;
 
 import jakarta.persistence.*;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 @AllArgsConstructor
@@ -21,61 +18,59 @@ public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "DEPARTMENT_ID")
+    @Column(name = "DEPARTMENT_ID",nullable = false)
     private Long departmentId;
 
-    @Column(name = "DEPARTMENT_TYPE",nullable = false)
+    @Column(name = "DEPARTMENT_TYPE")
     private String departmentType;
 
-    @Column(name = "CREATEDBY")
+    @Column(name = "CREATEDBY", nullable = false)
     private Integer createdBy;
 
-    @Column(name = "CREATEDDATETIME",nullable = false)
-    private Date createdDateTime;
+    @Column(name = "CREATEDDATETIME")
+    private Timestamp createdDateTime;
 
-    @Column(name = "UPDATEDBY",nullable = false)
+    @Column(name = "UPDATEDBY")
     private Integer updatedBy;
 
-    @Column(name = "UPDATEDDATETIME",nullable = false)
+    @Column(name = "UPDATEDDATETIME")
     private Integer updatedDateTime;
 
-    @Column(name = "HIBVERSION",nullable = false)
-    private Date hibVersion;
+    @Column(name = "HIBVERSION")
+    private Timestamp hibVersion;
 
-    @Column(name = "DEPARTMENT_CODE",nullable = false)
-    private Integer departmentCode;
+    @Column(name = "DEPARTMENT_CODE")
+    private String departmentCode;
 
-    @Column(name = "COST_CENTER_ACCODE",nullable = false)
+    @Column(name = "COST_CENTER_ACCODE")
     private String costCenterAccode;
 
-    @Column(name = "DEPARTMENT_TYPE_ID",nullable = false)
+    @Column(name = "DEPARTMENT_TYPE_ID")
     private Integer departmentTypeId;
 
-    @Column(name = "DISPLAYNAME",nullable = false)
+    @Column(name = "DISPLAYNAME")
     private String displayName;
 
-    @Column(name = "HODID",nullable = false)
+    @Column(name = "HODID")
     private Integer hodID;
 
-    @Column(name = "INTRABRANCHID",nullable = false)
+    @Column(name = "INTRABRANCHID")
     private Integer inChargeId;
 
-    @Column(name = "SITE",nullable = false)
-    private String site;
+    @Column(name = "SITEID")
+    private String siteId;
 
-    @Column(name = "DEPARTMENT_NAME",nullable = false)
+    @Column(name = "DEPARTMENT_NAME")
     private String departmentName;
 
-    @Column(name = "STARTED_ON",nullable = false)
-    private Date startedOn;
+    @Column(name = "STARTED_ON")
+    private Timestamp startedOn;
 
-    @Column(name = "IS_ACTIVE")
+    @Column(name = "IS_ACTIVE",nullable = false)
     private Integer isActive;
 
-    @Column(name = "DESCRIPTION",nullable = false)
+    @Column(name = "DESCRIPTION")
     private String description;
 
-    @Column(name = "HOD",nullable = false)
-    private String HOD;
 
 }

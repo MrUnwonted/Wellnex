@@ -18,52 +18,52 @@ public class  EmployeeMaster {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "EMPLOYEE_ID")
+    @Column(name = "EMPLOYEE_ID",nullable = false)
     private Integer employeeId;
 
-    @Column(name = "STATUS",nullable = false)
+    @Column(name = "STATUS")
     private Integer status;
 
-    @Column(name = "DATE_OF_BIRTH",nullable = false)
+    @Column(name = "DOB")
     private LocalDate dateOfBirth;
 
-    @Column(name = "DESIGNATION",nullable = false)
+    @Column(name = "DESIGNATION")
     private Integer designation;
 
-    @Column(name = "DATE_OF_JOIN",nullable = false)
+    @Column(name = "DATEOFJOIN")
     private LocalDate dateOfJoin;
 
-    @Column(name = "PREFIX",nullable = false)
+    @Column(name = "PREFIX")
     private Integer prefix;
 
-    @Column(name = "LAST_NAME",nullable = false)
+    @Column(name = "LASTNAME")
     private String lastName;
 
-    @Column(name = "DEPARTMENT_ID",nullable = false)
+    @Column(name = "DEPARTMENT_ID")
     private Integer department;
 
-    @Column(name = "FIRST_REPORTING_AUTHORITY",nullable = false)
-    private Integer firstReportingAuthority;
+    @Column(name = "REPORTING_AUTHORITY")
+    private Integer reportingAuthority;
 
-    @Column(name = "BRANCH_ID",nullable = false)
+    @Column(name = "BRANCHID")
     private Integer branchId;
 
-    @Column(name = "EMPLOYEE_TYPE",nullable = false)
+    @Column(name = "EMPLOYEETYPE")
     private Integer employeeType;
 
-    @Column(name = "LEAVERULETYPE_ID",nullable = false)
+    @Column(name = "LEAVERULETYPEID")
     private Integer leaveRuleTypeId;
 
-    @Column(name = "FIRST_NAME",nullable = false)
+    @Column(name = "FIRSTNAME")
     private String firstName;
 
-    @Column(name = "GENDERS",nullable = false)
+    @Column(name = "GENDERS")
     private Integer genders;
 
-    @Column(name = "MOBILE_NUMBER",nullable = false,unique = true)
-    private Integer mobileNumber;
+    @Column(name = "MOBILE_NUMBER")
+    private Long mobileNumber;
 
-    @Column(name = "EMPLOYEE_CATEGORY",nullable = false)
+    @Column(name = "EMPLOYEE_CATEGORY")
     private Integer employeeCategory;
 
 }

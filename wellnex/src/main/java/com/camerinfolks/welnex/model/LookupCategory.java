@@ -1,9 +1,12 @@
 package com.camerinfolks.welnex.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-import java.util.Date;
+import java.sql.Timestamp;
 
 @Entity
 @AllArgsConstructor
@@ -15,34 +18,34 @@ public class LookupCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "CATEGORYID")
-    private Number categpryId;
+    @Column(name = "CATEGORYID",nullable = false)
+    private Integer categpryId;
 
-    @Column(name = "CREATEDBY")
-    private Number createdBy;
+    @Column(name = "CREATEDBY",nullable = false)
+    private Integer createdBy;
 
     @Column(name = "CREATEDDATETIME")
-    private Date createdDateTime;
+    private Timestamp createdDateTime;
 
-    @Column(name = "CREATEDDATETIME",nullable = false)
-    private Number updatedBy;
+    @Column(name = "UPDATEDBY")
+    private Integer updatedBy;
 
-    @Column(name = "UPDATEDDATETIME",nullable = false)
-    private Date updatedDateTime;
+    @Column(name = "UPDATEDDATETIME")
+    private Timestamp updatedDateTime;
 
-    @Column(name = "HIBVERSION",nullable = false)
-    private Number hibversion;
+    @Column(name = "HIBVERSION")
+    private Integer hibversion;
 
-    @Column(name = "ACTIVE")
-    private Number active;
+    @Column(name = "ACTIVE",nullable = false)
+    private Integer active;
 
-    @Column(name = "CATEGORYNAME",nullable = false)
+    @Column(name = "CATEGORYNAME")
     private String categoryName;
 
-    @Column(name = "MODIFIABLE",nullable = false)
-    private Number modifiable;
+    @Column(name = "MODIFIABLE")
+    private Integer modifiable;
 
-    @Column(name = "INTRABRANCHID",nullable = false)
-    private Number intraBranchId;
+    @Column(name = "INTRABRANCHID")
+    private Integer intraBranchId;
 
 }

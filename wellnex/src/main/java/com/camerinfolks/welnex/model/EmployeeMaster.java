@@ -13,57 +13,57 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-@Table(name = "EmployeeMaster")
+@Table(name = "Employee")
 public class  EmployeeMaster {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "EMPLOYEE_ID")
-    private Number employeeId;
+    private Integer employeeId;
 
     @Column(name = "STATUS",nullable = false)
-    private Number status;
+    private Integer status;
 
     @Column(name = "DATE_OF_BIRTH",nullable = false)
     private LocalDate dateOfBirth;
 
     @Column(name = "DESIGNATION",nullable = false)
-    private Number designation;
+    private Integer designation;
 
     @Column(name = "DATE_OF_JOIN",nullable = false)
     private LocalDate dateOfJoin;
 
     @Column(name = "PREFIX",nullable = false)
-    private Number prefix;
+    private Integer prefix;
 
     @Column(name = "LAST_NAME",nullable = false)
     private String lastName;
 
     @Column(name = "DEPARTMENT_ID",nullable = false)
-    private Number department;
+    private Integer department;
 
     @Column(name = "FIRST_REPORTING_AUTHORITY",nullable = false)
-    private Number firstReportingAuthority;
+    private Integer firstReportingAuthority;
 
     @Column(name = "BRANCH_ID",nullable = false)
-    private Number branchId;
+    private Integer branchId;
 
     @Column(name = "EMPLOYEE_TYPE",nullable = false)
-    private Number employeeType;
+    private Integer employeeType;
 
     @Column(name = "LEAVERULETYPE_ID",nullable = false)
-    private Number leaveRuleTypeId;
+    private Integer leaveRuleTypeId;
 
     @Column(name = "FIRST_NAME",nullable = false)
     private String firstName;
 
     @Column(name = "GENDERS",nullable = false)
-    private Number genders;
+    private Integer genders;
 
     @Column(name = "MOBILE_NUMBER",nullable = false,unique = true)
     private Integer mobileNumber;
 
     @Column(name = "EMPLOYEE_CATEGORY",nullable = false)
-    private Number employeeCategory;
+    private Integer employeeCategory;
 
 }

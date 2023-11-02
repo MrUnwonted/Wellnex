@@ -28,37 +28,37 @@ public class Department {
     private String departmentType;
 
     @Column(name = "CREATEDBY")
-    private Number createdBy;
+    private Integer createdBy;
 
     @Column(name = "CREATEDDATETIME",nullable = false)
     private Date createdDateTime;
 
     @Column(name = "UPDATEDBY",nullable = false)
-    private Number updatedBy;
+    private Integer updatedBy;
 
     @Column(name = "UPDATEDDATETIME",nullable = false)
-    private Number updatedDateTime;
+    private Integer updatedDateTime;
 
     @Column(name = "HIBVERSION",nullable = false)
     private Date hibVersion;
 
     @Column(name = "DEPARTMENT_CODE",nullable = false)
-    private Number departmentCode;
+    private Integer departmentCode;
 
     @Column(name = "COST_CENTER_ACCODE",nullable = false)
     private String costCenterAccode;
 
     @Column(name = "DEPARTMENT_TYPE_ID",nullable = false)
-    private Number departmentTypeId;
+    private Integer departmentTypeId;
 
     @Column(name = "DISPLAYNAME",nullable = false)
     private String displayName;
 
     @Column(name = "HODID",nullable = false)
-    private Number hodID;
+    private Integer hodID;
 
     @Column(name = "INTRABRANCHID",nullable = false)
-    private Number inChargeId;
+    private Integer inChargeId;
 
     @Column(name = "SITE",nullable = false)
     private String site;
@@ -70,7 +70,7 @@ public class Department {
     private Date startedOn;
 
     @Column(name = "IS_ACTIVE")
-    private Number isActive;
+    private Integer isActive;
 
     @Column(name = "DESCRIPTION",nullable = false)
     private String description;

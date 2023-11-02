@@ -19,7 +19,7 @@ public class  EmployeeMaster {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "EMPLOYEE_ID")
-    private Number id;
+    private Number employeeId;
     @Column(name = "STATUS",nullable = false)
     private Number status;
     @Column(name = "DATE_OF_BIRTH",nullable = false)

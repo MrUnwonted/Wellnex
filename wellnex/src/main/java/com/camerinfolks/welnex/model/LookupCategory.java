@@ -16,7 +16,7 @@ public class LookupCategory {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "CATEGORYID")
-    private Number id;
+    private Number categpryId;
     @Column(name = "CREATEDBY")
     private Number createdBy;
     @Column(name = "CREATEDDATETIME")

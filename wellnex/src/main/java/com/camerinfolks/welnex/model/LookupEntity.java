@@ -18,11 +18,11 @@ public class LookupEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "CATEGORYID")
-    private Number id;
+    @Column(name = "LOOKUPID")
+    private Number lookupId;
     @Column(name = "CREATEDBY")
     private Number createdBy;
-    @Column(name = "CREATEDDATETIME")
+    @Column(name = "CREATEDDATETIME",nullable = false)
     private Date createdDateTime;
     @Column(name = "CREATEDDATETIME",nullable = false)
     private Number updatedBy;
@@ -32,10 +32,16 @@ public class LookupEntity {
     private Number hibversion;
     @Column(name = "ACTIVE")
     private Number active;
-    @Column(name = "CATEGORYNAME",nullable = false)
-    private String categoryName;
-    @Column(name = "MODIFIABLE",nullable = false)
-    private Number modifiable;
+    @Column(name = "DESCRIPTION",nullable = false)
+    private String description;
+    @Column(name = "LOOKUPCODE")
+    private String lookupCode;
+    @Column(name = "LOOKUPVALUE")
+    private String lookupValue;
+    @Column(name = "SORTORDER",nullable = false)
+    private Number sortOrder;
+    @Column(name = "LOOKUPCATEGORY",nullable = false)
+    private Number lookupCategory;
     @Column(name = "INTRABRANCHID",nullable = false)
     private Number intraBranchId;
 

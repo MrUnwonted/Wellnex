@@ -1,7 +1,10 @@
 package com.camerinfolks.welnex.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Date;
 
@@ -11,7 +14,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Table(name = "Lookup_Category")
-public class LookupCategory {
+public class LookupEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

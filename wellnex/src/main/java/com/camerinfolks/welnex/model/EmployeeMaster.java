@@ -17,7 +17,7 @@ import java.time.LocalDate;
 public class  EmployeeMaster {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "EMPLOYEE_ID",nullable = false)
     private Integer employeeId;
 

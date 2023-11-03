@@ -17,7 +17,7 @@ import java.sql.Timestamp;
 public class LookupCategory {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CATEGORYID",nullable = false)
     private Integer categpryId;
 

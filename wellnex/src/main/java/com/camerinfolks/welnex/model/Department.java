@@ -17,7 +17,7 @@ import java.sql.Timestamp;
 public class Department {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DEPARTMENT_ID",nullable = false)
     private Long departmentId;
 

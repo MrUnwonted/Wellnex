@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "USER")
+@Table(name = "WELLNEX_USER")
 public class User extends BaseDomain {
 
     @Id

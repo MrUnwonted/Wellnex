@@ -1,5 +1,6 @@
 package com.camerinfolks.welnex.model;
 
+import com.camerinfolks.welnex.model.domain.BaseDomain;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,15 +15,12 @@ import java.sql.Timestamp;
 @Getter
 @Setter
 @Table(name = "Department")
-public class Department {
+public class Department extends BaseDomain {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "DEPARTMENT_ID",nullable = false)
     private Long departmentId;
-
-    @Column(name = "DEPARTMENT_TYPE")
-    private String departmentType;
 
     @Column(name = "DEPARTMENT_CODE")
     private String departmentCode;
@@ -39,7 +37,7 @@ public class Department {
     @Column(name = "HODID")
     private Integer hodID;
 
-    @Column(name = "INTRABRANCHID")
+    @Column(name = "INCHARGEID")
     private Integer inChargeId;
 
     @Column(name = "SITEID")

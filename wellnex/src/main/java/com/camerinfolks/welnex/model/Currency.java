@@ -20,7 +20,6 @@ public class Currency extends BaseDomain {
     @Column(name = "CURRENCYID",nullable = false)
     private Integer id;
 
-
     @Column(name = "ALIASNAME")
     private String  aliasName;
 

@@ -6,8 +6,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Timestamp;
-
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -20,24 +18,6 @@ public class LookupEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "LOOKUPID",nullable = false)
     private Integer lookupId;
-
-    @Column(name = "CREATEDBY",nullable = false)
-    private Integer createdBy;
-
-    @Column(name = "CREATEDDATETIME")
-    private Timestamp createdDateTime;
-
-    @Column(name = "UPDATEDBY")
-    private Integer updatedBy;
-
-    @Column(name = "UPDATEDDATETIME")
-    private Timestamp updatedDateTime;
-
-    @Column(name = "HIBVERSION")
-    private Integer hibversion;
-
-    @Column(name = "ACTIVE",nullable = false)
-    private Integer active;
 
     @Column(name = "DESCRIPTION")
     private String description;
@@ -53,8 +33,5 @@ public class LookupEntity {
 
     @Column(name = "LOOKUPCATEGORY")
     private Integer lookupCategory;
-
-    @Column(name = "INTRABRANCHID")
-    private Integer intraBranchId;
 
 }

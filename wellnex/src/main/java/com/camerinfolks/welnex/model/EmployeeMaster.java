@@ -1,5 +1,6 @@
 package com.camerinfolks.welnex.model;
 
+import com.camerinfolks.welnex.model.domain.BaseDomain;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -14,7 +15,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Table(name = "Employee")
-public class  EmployeeMaster {
+public class  EmployeeMaster extends BaseDomain {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

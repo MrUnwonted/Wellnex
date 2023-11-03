@@ -24,21 +24,6 @@ public class Department {
     @Column(name = "DEPARTMENT_TYPE")
     private String departmentType;
 
-    @Column(name = "CREATEDBY", nullable = false)
-    private Integer createdBy;
-
-    @Column(name = "CREATEDDATETIME")
-    private Timestamp createdDateTime;
-
-    @Column(name = "UPDATEDBY")
-    private Integer updatedBy;
-
-    @Column(name = "UPDATEDDATETIME")
-    private Integer updatedDateTime;
-
-    @Column(name = "HIBVERSION")
-    private Timestamp hibVersion;
-
     @Column(name = "DEPARTMENT_CODE")
     private String departmentCode;
 
@@ -65,9 +50,6 @@ public class Department {
 
     @Column(name = "STARTED_ON")
     private Timestamp startedOn;
-
-    @Column(name = "IS_ACTIVE",nullable = false)
-    private Integer isActive;
 
     @Column(name = "DESCRIPTION")
     private String description;
